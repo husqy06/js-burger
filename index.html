@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +11,108 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Create Your Burger</title>
 </head>
+
 <body>
     <div class="wrap">
         <header>
             <h1 class="header-title">Create Your Burger</h1>
             <img class="header-img" src="img/burger-top.png" alt="">
         </header>
+
         <main>
+            <h2>Mio Nome</h2>
+            <p class="ingredients-p">Ingredients</p>
 
+            <div class="ingredients-list">
+                <ul>
+                    <li>
+                        <img src="img/cheese.svg" alt="">
+                        <span>Cheese</span>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <span class="add-span">add</span>
+                    </li>
+                    <li>
+                        <img src="img/fried-egg.svg" alt="">
+                        <span>Egg</span>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <span class="add-span">add</span>
+                    </li>
+                    <li>
+                        <img src="img/mustard.svg" alt="">
+                        <span>Mustard</span>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <span class="add-span">add</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="img/tomato.svg" alt="">
+                        <span>Tomato</span>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <span class="add-span">add</span>
+                    </li>
+                    <li>
+                        <img src="img/lettuce.svg" alt="">
+                        <span>Lettuce</span>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <span class="add-span">add</span>
+                    </li>
+                    <li>
+                        <img src="img/ketchup.svg" alt="">
+                        <span>Ketchup</span>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <span class="add-span">add</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="coupon">
+                <span>Discount Coupon</span>
+                <span class="coupon-codex">126537612t3</span>
+            </div>
+
+            <div class="button-container">
+                <button>Calculate</button>
+            </div>
         </main>
-        <footer>
 
+        <footer>
+            <h2>Your Price</h2>
+            <h2>$58</h2>
         </footer>
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>

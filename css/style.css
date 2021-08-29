@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 .wrap {
     width: 45%;
     height: 100vh;
     margin: 0 auto;
-    background-color: lightblue;
     font-family: "Lato", sans-serif;
 }
 
+/* header */
 header {
     background-color: #FDBB40;
     width: 100%;
@@ -19,18 +20,129 @@ header {
     justify-content: space-between;
     position: relative;
 }
-
 .header-img {
     position: absolute;
     width: 200px;
     height: 200px;
     right: -100px;
 }
-
 .header-title {
     position: absolute;
     left: 50px;
     bottom: 30px;
     font-size: 35px;
-    font-weight: 800;
 }
+/* / header */
+
+/* main */
+main {
+    padding: 50px 50px 0px 50px;
+    height: calc(100vh - 120px - 90px);
+}
+.ingredients-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.ingredients-p {
+    font-size: 22px;
+    margin-top: 30px;
+}
+.ingredients-list img {
+    width: 50px;
+}
+.ingredients-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ingredients-list input,
+.ingredients-list span {
+    margin-left: 10px;
+}
+.ingredients-list input {
+    cursor: pointer;
+}
+.add-span {
+    color: #D33359; 
+}
+.container {
+display: block;
+position: relative;
+padding-left: 27px;
+margin-bottom: 15px;
+cursor: pointer;
+}
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 15px;
+width: 15px;
+background-color: #D33359;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+.container .checkmark:after {
+left: 3px;
+bottom: 3px;
+width: 7px;
+height: 13px;
+border: solid black;
+border-width: 0 4px 4px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.coupon {
+    margin-top: 30px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+.coupon-codex {
+    color: gray;
+    font-size: 13px;
+}
+.button-container {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+.button-container button {
+    border: none;
+    border-radius: 10px;
+    background-color: #FDBB40;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* /  main */
+
+/* footer */
+footer {
+    background-color: #D33359;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    color: white;
+}
+/* / footer */
